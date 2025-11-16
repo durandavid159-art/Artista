@@ -1,0 +1,97 @@
+/* Selector universal aplicar estilos a todos los elementos del documento HTML*/
+*{   
+    box-sizing: border-box;
+    margin: 3px;
+    padding: 2px;    
+}
+#body_biografia{
+    background-color: #b9b9b996;
+}
+.etiqueta{
+    background-color: #517d797a;
+}
+/*nav*/
+.navegacion{
+    position: absolute;
+    top: 19px;
+    right: 21px;
+    margin: 6px;
+}
+.navegacion, ul{
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end;
+}
+.navegacion a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+.navegacion ul a:hover {
+  color: #EFECE3;
+}
+
+#inicio{
+    background-color: #4A70A9;
+    margin-bottom: 17px;
+}
+
+/*imagenes*/
+.imagenes_inicio{
+    display: flex;
+    justify-content: center;
+    gap: 55px;
+}
+img {
+    max-width: 43%;
+    height: auto;
+}
+.ima2{
+    width: 21%;
+}
+
+/*Parrafos*/
+p { 
+    font-family: Verdana /*, Geneva, Tahoma, sans-serif */;
+    text-align: justify;
+    color: rgb(0, 0, 0);
+}
+
+/*Titlulos y subtitulos*/
+h1, h2{
+    width: 464px;
+    height: 57px;
+    color: rgb(0, 0, 0);    
+}
+
+/* Estilo de la tabla */
+table {
+    width: 100%;
+    border-collapse: separate; /* Permite el border-radius en las esquinas */
+    border-spacing: 0;
+    overflow: hidden; /* Oculta bordes que se salgan, importante para el radio */
+    border-radius: 8px; /* Bordes redondeados */
+}
+/* Encabezados de la tabla */
+th {
+    background-color: #8FABD4;
+    color: #000000;
+    padding: 15px 10px;
+    text-align: left;
+    text-transform: uppercase;    
+}
+/* Celdas de la tabla */
+td {
+    padding: 12px 10px;
+    background-color:#EFECE3;
+}
+/* Columna de números (#)*/
+td:first-child {
+    text-align: center;
+}
+/* Efecto hover (al pasar el ratón) */
+tr:hover td {
+    background-color: #D9CFC7; 
+    transition: background-color 0.3s ease;
+}
